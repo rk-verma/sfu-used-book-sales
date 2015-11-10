@@ -1,0 +1,26 @@
+<div class="col-md-6 col-md-offset-5">
+<h1>Log in</h1>
+<p></p>
+<%= form_tag "/auth/identity/callback" do %>
+  <div class="field">
+    <%= label_tag :auth_key, "Email" %><br>
+    <%= text_field_tag :auth_key %>
+  </div>
+  <div class="field">
+    <%= label_tag :password, "Password" %><br>
+    <%= password_field_tag :password %>
+    
+  </div>
+  
+  
+ 
+  <p></p>      
+  <div class="actions"><%= submit_tag "Login", class: "btn btn-primary" %> <%= link_to "Login using Facebook", "auth/facebook", class: "btn btn-primary" %></div>
+  <p></p> 
+  
+  <p></p>
+  or <%= link_to "Login using Twitter", "auth/twitter" %>
+  <p></p>
+  <p>New user? <%= link_to "Sign up now!", new_identity_path %></p>
+<% end %>
+</div>
