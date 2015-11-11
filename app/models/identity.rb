@@ -1,5 +1,4 @@
 class Identity < OmniAuth::Identity::Models::ActiveRecord
-<<<<<<< HEAD
   before_save {self.email = email.downcase}
 	validates :name, presence: true, length: { maximum: 50}
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -22,10 +21,4 @@ class Identity < OmniAuth::Identity::Models::ActiveRecord
   has_secure_password
   validates_format_of :email, :with => /[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}/i
   validates :password, length: { minimum: 6, maximum: 32 }
-=======
-  validates_presence_of :name
-  validates_uniqueness_of :email
-  validates_format_of :email, :with => /[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}/i
-  validates :password, length: { minimum: 6 }
->>>>>>> 529c91d6833069048d63f30785ce3d20c84bf30a
 end

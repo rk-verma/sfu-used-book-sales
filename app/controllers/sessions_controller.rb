@@ -13,11 +13,7 @@ class SessionsController < ApplicationController
         redirect_to root_path
      
       
-<<<<<<< HEAD
   end
-=======
-    end
->>>>>>> 529c91d6833069048d63f30785ce3d20c84bf30a
 
   def destroy
     flash[:success] = 'Successfully logged out!'
