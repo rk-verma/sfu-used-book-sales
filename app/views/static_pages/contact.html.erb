@@ -1,11 +1,55 @@
-<% provide(:title,"CONTACT") %>
-<% provide(:content, "Contact email: rverma@sfu.ca, cyahn@sfu.ca, lza93@sfu.ca, codyc@sfu.ca, minxinz@sfu.ca") %>
-
-
-<% provide(:name, "Contact") %>
-<h1> 
-	<%= yield (:name) %>
-</h1>
-<h2> 
-	<%= yield (:content) %>
-</h2>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#section {
+	width:780px;
+    float:left;
+    padding:10px;
+    text-align:center;	 	 
+}
+div.relative
+{
+  position: relative;
+  width: 1000px;
+  height:800px;
+  background: url('/assets/background.png');
+  border: 2px solid black;
+}
+div.absolute{
+	position: absolute;
+	top: 10px;
+	width:800px;
+	height:600px;
+	margin:80px;
+	background-color:#ffffff;
+	border:3px solid black;
+}
+div.absolute p {
+	front-weight: bold;
+	color:#003300 ;
+}
+</style>
+</head>
+<body>
+<div class = "relative">
+	<div class = "absolute">
+		<div id = "header">
+		<h1>We Are CMPT- 276 Students</h1> 
+		</div>
+		<div id ="section">
+			<h2>rverma@sfu.ca</h2><br>
+			<h2>cyahn@sfu.ca</h2><br>
+			<h2>lza93@sfu.ca</h2><br>
+			<h2>codyc@sfu.ca</h2><br>
+			<h2>minxinz@sfu.ca</h2><br>
+	</div>
+	</div>
+</div>
+</body>
+</html>
