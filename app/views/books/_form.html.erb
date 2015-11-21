@@ -1,0 +1,14 @@
+<%= simple_form_for @book do |f| %>
+    <%= f.file_field :avatar %>
+    <%= f.input :title, label: "Book Title" %>
+    <%= f.input :cname, label: "Course Name" %>
+    <%= f.input :cnumber, label: "Course Number" %>
+    <%= f.input :quality, label: "Book Quality" %>
+    <%= f.input :publisher, label: "Book Publisher" %>
+    <%= f.input :campus, label: "SFU Campus Location" %>
+    <%= f.input :price, label: "Book Price" %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+    
+
+
+<% end %>
