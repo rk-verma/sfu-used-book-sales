@@ -7,11 +7,18 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
 //
+<<<<<<< HEAD
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+=======
+// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
+>>>>>>> f35313dac63ed0e3dd3a108a401f168eca043220
 // about supported directives.
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require bootstrap-sprockets 
+=======
+>>>>>>> f35313dac63ed0e3dd3a108a401f168eca043220
 //= require turbolinks
 //= require_tree .

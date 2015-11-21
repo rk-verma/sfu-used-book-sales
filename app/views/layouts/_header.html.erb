@@ -9,6 +9,7 @@
       <% if current_user %>
      
         <ul class="nav navbar-nav pull-right">
+<<<<<<< HEAD
        <%= link_to 'Edit profile', edit_user_registration_path, class: 'navbar-brand' %> 
        <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
        <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: 'navbar-brand' %>
@@ -16,6 +17,13 @@
       <% else %>
          <ul class="nav navbar-nav pull-right">
           <%= link_to "Login",   new_user_session_path,  class: 'navbar-brand' %>
+=======
+        <a href=profile><%= image_tag current_user.image_url, alt: current_user.name %></a> <%= link_to 'Log Out', logout_path, method: :delete %>
+        </ul>
+      <% else %>
+         <ul class="nav navbar-nav pull-right">
+          <%= link_to "Login",   login_path,  class: 'navbar-brand' %>
+>>>>>>> f35313dac63ed0e3dd3a108a401f168eca043220
           
           
         </ul>
@@ -33,7 +41,11 @@
        </ul>
    
   </div>
+<<<<<<< HEAD
 </header>
 
 
      
+=======
+</header>
+>>>>>>> f35313dac63ed0e3dd3a108a401f168eca043220
