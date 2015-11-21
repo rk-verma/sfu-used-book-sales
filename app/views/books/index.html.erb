@@ -1,0 +1,18 @@
+
+<% if current_user %>
+  <div class="row">
+  <% @books.each do |book| %>
+    <div class = "col-md-3">
+    <a href="/books/<%= book.id %>">
+      <%= image_tag book.avatar.url(:medium), class: "book" %>
+    </a>
+    </div>
+
+<% end %>
+  </div>
+
+<%= link_to "Add Book", new_book_path, class: "btn btn-primary" %>
+<% else %>
+  <%= render 'welcome' %>
+<% end %>
+
