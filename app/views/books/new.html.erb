@@ -1,3 +1,113 @@
 <h1> New Book</h1>
+<%= simple_form_for @book do |f| %>
+<%= f.file_field :avatar %>
+    <%= f.input :title, label: "Book Title" %>
+<html lang="en">
+<body>
+<div class="container">
+  <form role="form">
+    <div class="form-group">
+      <label for="sel">Select Department:</label>
+      <select class="form-control" id="sel">
+        <option>ACMA</option>
+        <option>ALS</option>
+        <option>APMA</option>
+        <option>ARAB</option>
+        <option>ARCH</option>
+        <option>ASC</option>
+        <option>BISC</option>
+        <option>BOT</option>
+        <option>BPK</option>
+        <option>BUEC</option>
+        <option>BUS</option>
+        <option>CHEM</option>
+        <option>CHIN</option>
+        <option>CMNS</option>
+        <option>CMPT</option>
+        <option>CGS</option>
+        <option>CRIM</option>
+        <option>ALS</option>
+        <option>DDP</option>
+        <option>DEVS</option>
+        <option>DIAL</option>
+        <option>DMED</option>
+        <option>EASC</option>
+        <option>ECO</option>
+        <option>ECON</option>
+        <option>EDPR</option>
+        <option>EDUC</option>
+        <option>ENGL</option>
+        <option>ENSC</option>
+        <option>ENV</option>
+        <option>EVSC</option>
+        <option>EXCH</option>
+        <option>FAL</option>
+        <option>FAN</option>
+        <option>FEP</option>
+        <option>FNLG</option>
+        <option>FNST</option>
+        <option>FPA</option>
+        <option>FREN</option>
+        <option>GEOG</option>
+        <option>GERM</option>
+        <option>GERO</option>
+        <option>GRAD</option>
+        <option>GRK</option>
+        <option>GSWS</option>
+        <option>HIST</option>
+        <option>HS</option>
+        <option>HSCI</option>
+        <option>HUM</option>
+        <option>IAT</option>
+        <option>IS</option>
+        <option>ITAL</option>
+        <option>JAPN</option>
+        <option>LAS</option>
+        <option>LBRL</option>
+        <option>LBST</option>
+        <option>LING</option>
+        <option>LS</option>
+        <option>MACM</option>
+        <option>MASC</option>
+        <option>MATH</option>
+        <option>MBB</option>
+        <option>MCRT</option>
+        <option>MQPT</option>
+        <option>MSE</option>
+        <option>MSSC</option>
+        <option>MUSC</option>
+        <option>ONC</option>
+        <option>PERS</option>
+        <option>PHIL</option>
+        <option>PHYS</option>
+        <option>PLCY</option>
+        <option>POL</option>
+        <option>PSYC</option>
+        <option>PUB</option>
+        <option>REM</option>
+        <option>SA</option>
+        <option>SAR</option>
+        <option>SCD</option>
+        <option>SCI</option>
+        <option>SPAN</option>
+        <option>STAT</option>
+        <option>URB</option>
+        <option>WDA</option>
+        <option>WL</option>
+      </select>
+      <br>
+    </div>
+  </form>
+</div>
+</body>
+</html>
+<%= f.input :cnumber, label: "Course Number" %>
+    <%= f.input :quality, label: "Book Quality" %>
+    <%= f.input :publisher, label: "Book Publisher" %>
+    <%= f.input :campus, label: "SFU Campus Location" %>
+    <%= f.input :price, label: "Book Price" %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+    
 
-<%= render 'form' %>
+
+<% end %>
